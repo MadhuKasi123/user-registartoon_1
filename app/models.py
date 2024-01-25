@@ -6,3 +6,5 @@ class profile(models.Model):
     username=models.OneToOneField(User,on_delete=models.CASCADE)
     adderss=models.TextField()
     profile_pic=models.ImageField()
+    def __str__(self):
+        return self.username
